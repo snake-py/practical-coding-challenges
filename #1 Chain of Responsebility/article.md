@@ -1,4 +1,4 @@
-# #1 Code Challenge To App - Chain of responsibility - Python
+# 1 Code Challenge - Chain Of Responsibility - Python
 
 <b>In my series Code Challenge, I am tackling code challenges and try to transform them into a s real world issue. With that Approach I can then build a small Application to illustrate the problem better. Checkout The Base [Repository](https://github.com/snake-py/practical-coding-challenges).</b>
 
@@ -43,7 +43,7 @@ Here is the app schematically represented:
 
 ### Core Logic
 
-The heart of the application is the [TicketSystem Class](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Tickets/TicketSystem.py). This class is running on a second thread and is responsible for handling the tickets. In combination with the [employee classes](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Employee/Employee.py) the Chain of Responsibility pattern illustrated.
+The heart of the application is the [TicketSystem Class](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Tickets/TicketSystem.py). This class is running on a second thread and is responsible for handling the tickets. In combination with the [Employee classes](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Employee/Employee.py) the Chain of Responsibility pattern illustrated.
 
 Let us First look at the TicketSystem:
 
