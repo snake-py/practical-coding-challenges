@@ -1,6 +1,7 @@
 # Basic Technical documentation
 
-if you are looking for the article, you can find it [here](Article.md)
+Read about the challenge [here](./Task.md)
+if you are looking for the article, you can find it [here](Article.md) or on (dev.to)[https://dev.to/snakepy/1-code-challenge-chain-of-responsibility-python-376]
 
 ## What did I do
 

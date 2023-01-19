@@ -1,0 +1,35 @@
+{
+    "name": "Kit A",
+    "children": [
+        {
+            "name": "Kit B",
+            "children": [
+                {
+                    "name": "Kit D",
+                    "children": [
+                        {
+                            "name": "Product K",
+                            "price": 20
+                        },
+                        {
+                            "name": "Product H",
+                            "price": 50
+                        }
+                    ]
+                },
+                {
+                    "name": "Product F",
+                    "price": 5
+                },
+                {
+                    "name": "Product G",
+                    "price": 15
+                }
+            ]
+        },
+        {
+            "name": "Product C",
+            "price": 10
+        }
+    ]
+}
