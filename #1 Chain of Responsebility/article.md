@@ -1,6 +1,6 @@
 # #1 Code Challenge To App - Chain of responsibility - Python
 
-<b>In my series Code Challenge, I am tackling code challenges and try to transform them into a s real world issue. With that Approach I can then build a small Application to illustrate the problem better.</b>
+<b>In my series Code Challenge, I am tackling code challenges and try to transform them into a s real world issue. With that Approach I can then build a small Application to illustrate the problem better. Checkout The Base [Repository](https://github.com/snake-py/practical-coding-challenges).</b>
 
 ## The Challenge
 
@@ -26,17 +26,16 @@ Every employee can decide for them selfs if they can handle the case or not. If 
 
 ## End Product
 
-(IMAGE)
+I created a minimal Flask app which accepts cases and then on a second thread I have running a self written queue system. So nothing production ready, but it illustrates the problem. I will try to walk you through the app in the following sections. The App only has two views. You can find the code on [Github](https://github.com/snake-py/practical-coding-challenges/tree/main/%231%20Chain%20of%20Responsebility).
 
-I created a minimal Flask app which accepts cases and then on a second thread I have running a self written queue system. So nothing production ready, but it illustrates the problem. I will try to wal k you through the app in the following sections.
-
-## The Code
+<img src="./AppHome.PNG" alt="Home" />
+<img src="./TicketDetailView.PNG" alt="Ticket View" />
 
 ### Introduction
 
 I think it is always helpful to understand the entry point of an application hence I am not starting to explain the core logic first.
 
-Inside [app.py](LINK) wa have the entry point of the application in which we create the Flask app, register the routes and start the second thread on which the TicketSystem Class is running.
+Inside [app.py](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/app.py) is the application entry point. There the Flask app is created, routes are registered and the second thread is started on which the TicketSystem Class is running.
 
 Here is the app schematically represented:
 
@@ -44,7 +43,7 @@ Here is the app schematically represented:
 
 ### Core Logic
 
-The heart of the application is the [TicketSystem Class](). It is a class which is running on a second thread and is responsible for handling the tickets. And in combination with the [employee classes]() it illustrated the Chain of Responsibility pattern.
+The heart of the application is the [TicketSystem Class](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Tickets/TicketSystem.py). This class is running on a second thread and is responsible for handling the tickets. In combination with the [employee classes](https://github.com/snake-py/practical-coding-challenges/blob/main/%231%20Chain%20of%20Responsebility/modules/Employee/Employee.py) the Chain of Responsibility pattern illustrated.
 
 Let us First look at the TicketSystem:
 
@@ -183,5 +182,11 @@ class Ticket:
         self.current_employee = None
         self.start_time = None
         self.end_time = None
-
 ```
+
+### I always love to engage with readers :rocket:
+
+-   **Do you need help, with anything written above?**
+-   **Do you think I made a good example?** :smile:
+-   **Do you think I can improve?**
+-   **Did you like the article?** :fire:

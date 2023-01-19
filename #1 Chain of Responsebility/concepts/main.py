@@ -1,3 +1,7 @@
+"""
+I used this example to understand how I could tackle the challenge 
+and from here I understood, that I need to use the Chain of Responsibility pattern.
+"""
 from datetime import datetime
 from enum import Enum
 from time import sleep
