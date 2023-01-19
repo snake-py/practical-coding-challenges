@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block title %} All Tickets {% endblock %} {% block
+content %}
+<h1>All Tickets</h1>
+<table class="table">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Title</th>
+    <th scope="col">Status</th>
+    <th scope="col">Details</th>
+    <th scope="col">opened</th>
+    <th scope="col">closed</th>
+  </tr>
+  {% for ticket in tickets %}
+  <tr>
+    <td>{{ ticket.id }}</td>
+    <td>{{ ticket.title }}</td>
+    <td>{{ ticket.status }}</td>
+    <td>
+      <a
+        target="_blank"
+        class="btn btn-sm btn-success"
+        href="/ticket/{{ticket.id}}"
+        >Details</a
+      >
+    </td>
+    <td>{{ticket.start_time}}</td>
+    <td>{{ticket.end_time}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

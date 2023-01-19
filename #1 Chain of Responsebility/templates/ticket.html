@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %} {{ticket.title}} {% endblock %} {%
+block content %}
+<div class="card">
+  <div class="card-header">
+    <span>{{ticket.title}} - {{ticket.id}} </span>
+    <span><a class="btn btn-sm btn-primary float-right" href="/">Back</a></span>
+  </div>
+  <div class="card-body">
+    <div class="ml-1">
+      <p>{{ticket.description}}</p>
+      <p>Status: {{ticket.status}}</p>
+      <p>Started: {{ticket.start_time}}</p>
+      <p>Closed: {{ticket.end_time}}</p>
+    </div>
+    <h2>History</h2>
+    <footer>
+      <ul class="list-group list-group-flush">
+        {% for entry in ticket.history %}
+        <li class="list-group-item"><span>{{entry}}</span></li>
+        {% endfor %}
+      </ul>
+    </footer>
+  </div>
+</div>
+{% endblock %}
